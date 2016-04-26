@@ -1,0 +1,22 @@
+{
+  "name": "__package_name__",
+  "description":"__description__",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bundle exec ruby bot.rb",
+    "install": "bundle install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "__git_repo_url__"
+  },
+  "keywords": [
+    "green-bot",
+    "greenbot",
+    "bot",
+    "bashbot"
+  ],
+  "author": "__author__",
+  "license": "MIT",
+  "version": "0.1.0"
+}

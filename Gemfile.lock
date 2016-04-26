@@ -1,0 +1,25 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    airbrake (5.2.3)
+      airbrake-ruby (~> 1.2)
+    airbrake-ruby (1.2.3)
+    awesome_print (1.6.1)
+    byebug (8.2.4)
+    highline (1.7.8)
+    redis (3.3.0)
+    uuidtools (2.1.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  airbrake
+  awesome_print
+  byebug
+  highline
+  redis
+  uuidtools
+
+BUNDLED WITH
+   1.10.6
