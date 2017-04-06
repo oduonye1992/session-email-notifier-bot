@@ -1,5 +1,5 @@
 {
-  "name": "__package_name__",
+  "name": "__name__",
   "description":"__description__",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "__git_repo_url__"
+    "url": 'https://github.com/__github_account__/__name__'
   },
   "keywords": [
     "green-bot",

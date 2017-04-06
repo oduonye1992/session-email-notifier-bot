@@ -1,6 +1,6 @@
 [{
   "default_cmd": "npm start",
-  "default_path": ".\/node_modules\/__package_name__",
+  "default_path": "./node_modules/__name__",
   "default_settings": [
    {
       "name": "PROMPT_1",
@@ -20,8 +20,8 @@
   ],
   "desc": "__description__",
   "icon_class": "information",
-  "name": "__package_name__"
+  "name": "__name__",
   "owner_cmd": "",
   "short_desc": "__description__",
-  "repo_link": "__git_repo_url__"
+  "repo_link": "https://github.com/__github_account__/__name__"
 }]
