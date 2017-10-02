@@ -10,7 +10,7 @@
   ],
   "desc": "A bot to notify people at the start of a session",
   "icon_class": "information",
-  "name": "session_notifier",
+  "name": "session-email-notifier-bot",
   "owner_cmd": "",
   "short_desc": "A bot to notify people at the start of a session",
   "repo_link": "https://github.com/oduonye1992/session-email-notifier-bot"
