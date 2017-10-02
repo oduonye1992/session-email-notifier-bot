@@ -1,2 +1,2 @@
-# info_bot
-A bot that collects information from a user, built for green-bot.
+# Session Notifier Bot
+A bot that emails a distribution list of the presence of a new customer session.
