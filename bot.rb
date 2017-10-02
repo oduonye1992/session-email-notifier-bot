@@ -1,27 +1,28 @@
 #!/usr/bin/env ruby
 #
 #
-PROMPT_1 = ENV['PROMPT_1'] || 'Default prompt 1'
-PROMPT_2 = ENV['PROMPT_2'] || 'Default prompt 2'
-PROMPT_3 = ENV['PROMPT_3'] || 'Default prompt 3'
-SIGNATURE = ENV['SIGNATURE'] || 'Default signature prompt'
-
+DISTRIBUTION_LIST = ENV['DISTRIBUTION_LIST'] || 'thomas.howe@tendigittext.com'
+API_KEY= ENV['API_KEY'] || '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'
 
 require "./lib/greenbot.rb"
-tell PROMPT_1
-issue = note(PROMPT_2)
-if confirm("Would you like someone to contact you?")
-  contact_me = true
-  contact_me.remember("contact_me")
-  name = ask("When we call, who should we ask for?")
-  name.remember("who_to_ask_for")
-  if confirm("Is there another number we should try?")
-    better_number = ask("Please enter that number with an area code")
-    better_number.remember("better_number")
-  end
-else
-  tell("No problem at all.")
+require 'mail'
+
+Mail.defaults do
+  delivery_method :smtp,  :address    => "smtp.sendgrid.net",
+                          :port       => 25,
+                          :user_name  => 'apikey',
+                          :password   => API_KEY,
+                          :enable_ssl => true
 end
-tell PROMPT_3
-tell SIGNATURE
+
+extraInfo = gets
+bodyText = "A new session has started" + extraInfo
+
+mail = Mail.new do
+  to   DISTRIBUTION_LIST
+  from 'noreply@tendigittext.com'
+  body bodyText
+end
+
+mail.deliver!
 

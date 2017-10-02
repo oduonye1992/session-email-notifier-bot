@@ -1,27 +1,17 @@
 [{
   "default_cmd": "npm start",
-  "default_path": "./node_modules/__name__",
+  "default_path": "./node_modules/session_notifier",
   "default_settings": [
    {
-      "name": "PROMPT_1",
-      "value": "Change me to change prompt 1",
-      "type": "text"
-    },
-    {
-      "name": "PROMPT_2",
-      "value": "Change me to change prompt 2",
-      "type": "text"
-    },
-    {
-      "name": "SIGNATURE",
-      "value": "Thank you, you can visit us on the web at http://www.green-bot.com",
+      "name": "DISTRIBUTION_LIST",
+      "value": "List of emails to send when sessions starts",
       "type": "text"
     }
   ],
-  "desc": "__description__",
+  "desc": "A bot to notify people at the start of a session",
   "icon_class": "information",
-  "name": "__name__",
+  "name": "session_notifier",
   "owner_cmd": "",
-  "short_desc": "__description__",
-  "repo_link": "https://github.com/__github_account__/__name__"
+  "short_desc": "A bot to notify people at the start of a session",
+  "repo_link": "https://github.com/howethomas/session_notifier"
 }]

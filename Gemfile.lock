@@ -7,6 +7,11 @@ GEM
     awesome_print (1.6.1)
     byebug (8.2.4)
     highline (1.7.8)
+    mail (2.6.6)
+      mime-types (>= 1.16, < 4)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     redis (3.3.0)
     uuidtools (2.1.5)
 
@@ -18,8 +23,9 @@ DEPENDENCIES
   awesome_print
   byebug
   highline
+  mail
   redis
   uuidtools
 
 BUNDLED WITH
-   1.10.6
+   1.14.6
