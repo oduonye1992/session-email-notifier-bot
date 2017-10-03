@@ -6,6 +6,41 @@
       "name": "DISTRIBUTION_LIST",
       "value": "List of emails to send when sessions starts",
       "type": "text"
+    },
+    {
+      "name": "API_KEY",
+      "value": "Mail Provider's API Key",
+      "type": "text"
+    },
+    {
+      "name": "MAIL_ADDRESS",
+      "value": "Mail Address",
+      "type": "text"
+    },
+    {
+      "name": "MAIL_PORT",
+      "value": "Mail Port",
+      "type": "text"
+    },
+    {
+      "name": "MAIL_PASSWORD",
+      "value": "Mail Password",
+      "type": "text"
+    },
+    {
+      "name": "MAIL_USER_NAME",
+      "value": "Mail Username",
+      "type": "text"
+    },
+    {
+      "name": "MAIL_BODY",
+      "value": "Message to send to the distribution list",
+      "type": "text"
+    },
+    {
+      "name": "MAIL_SUBJECT",
+      "value": "Message to send to the distribution list",
+      "type": "text"
     }
   ],
   "desc": "A bot to notify people at the start of a session",
