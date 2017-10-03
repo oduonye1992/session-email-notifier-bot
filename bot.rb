@@ -2,22 +2,20 @@
 #
 #
 DISTRIBUTION_LIST = ENV['DISTRIBUTION_LIST'] || 'robertjd333@gmail.com'
-API_KEY= ENV['API_KEY'] || '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'
+API_KEY= ENV['API_KEY']
+MAIL_ADDRESS= ENV['MAIL_ADDRESS'] 
+MAIL_PORT= ENV['MAIL_PORT'] 
+MAIL_PASSWORD= ENV['MAIL_PASSWORD'] 
+MAIL_USER_NAME= ENV['MAIL_USER_NAME'] 
 
 require "./lib/greenbot.rb"
 require 'mail'
 
 Mail.defaults do
- # delivery_method :smtp, {   :address    => "smtp.sendgrid.net",
- #                         :port       => 25,
- #                         :user_name  => 'apikey',
- #                         :password   => API_KEY,
- #                         :authentication => 'plain',
- #                         :enable_starttls_auto => true }
-  delivery_method :smtp, { :address   => "smtp.sendgrid.net",                                                     
-      :port      => 25,                                                                     
-      :user_name => "apikey",                                                                
-      :password  => API_KEY, 
+  delivery_method :smtp, { :address   => MAIL_ADDRESS,                                                     
+      :port      => MAIL_PORT,                                                                     
+      :user_name => MAIL_USER_NAME,                                                                
+      :password  => MAIL_PASSWORD, 
       :authentication => 'plain',                                                            
       :enable_starttls_auto => true }
 end
